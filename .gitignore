@@ -1,0 +1,21 @@
+# Environment / secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Data cache (parquet files — not needed at runtime)
+cache/*.parquet
+risk_aware_routing/cache/
+
+# Output data — keep output_chicago/ (needed at runtime for routing + heatmap)
+# output_chicago/ is ~14MB and MUST be in the repo for deployment
+output/
+
+# Node
+node_modules/
+dist/

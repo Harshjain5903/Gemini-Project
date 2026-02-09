@@ -1,0 +1,76 @@
+/* ===== Mobile Navigation Bar ===== */
+.mobile-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(17, 24, 39, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.mobile-nav-bar:active {
+  background: rgba(17, 24, 39, 1);
+}
+
+.mnb-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #3b82f6);
+  transition: width 0.5s ease;
+  min-width: 0;
+}
+
+.mnb-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  min-height: 56px;
+}
+
+.mnb-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+
+.mnb-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.mnb-instruction {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mnb-next {
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mnb-chevron {
+  flex-shrink: 0;
+  color: #475569;
+  width: 20px;
+  height: 20px;
+}

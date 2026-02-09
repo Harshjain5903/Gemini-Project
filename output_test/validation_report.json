@@ -1,0 +1,322 @@
+{
+  "generated_at": "2026-02-02T18:59:51.961656",
+  "summary": {
+    "data_quality_score": 94.13,
+    "model_confidence": 75
+  },
+  "details": {
+    "data_quality": {
+      "total_records": 4828,
+      "geocoded_pct": 100.0,
+      "has_time_pct": 100.0,
+      "has_street_pct": 70.65,
+      "has_severity_pct": 100.0,
+      "date_range": {
+        "min": "2026-01-07 00:00:00",
+        "max": "2026-01-30 23:56:00"
+      }
+    },
+    "spatial_coverage": {
+      "crash_bbox": {
+        "min_lng": -74.2512,
+        "min_lat": 40.502,
+        "max_lng": -73.7016,
+        "max_lat": 40.9102
+      },
+      "grid_cells_count": 2759,
+      "cells_with_crashes": 2759,
+      "avg_crashes_per_cell": 1.75,
+      "max_crashes_in_cell": 11,
+      "total_crashes_covered": 4828
+    },
+    "risk_distribution": {
+      "mean": 10.03,
+      "median": 9.09,
+      "std": 10.78,
+      "min": 1.82,
+      "max": 100.0,
+      "percentiles": {
+        "p10": 1.82,
+        "p25": 1.82,
+        "p50": 9.09,
+        "p75": 12.73,
+        "p90": 23.64,
+        "p99": 47.27
+      },
+      "category_counts": {
+        "very_low": 2450,
+        "low": 255,
+        "medium": 39,
+        "high": 11,
+        "critical": 4
+      }
+    },
+    "temporal": {
+      "hourly": {
+        "peak_hour": 8,
+        "peak_hour_crashes": 299,
+        "low_hour": 4,
+        "low_hour_crashes": 64,
+        "peak_to_low_ratio": 4.67
+      },
+      "periods": [
+        {
+          "time_period": "evening",
+          "day_type": "weekday",
+          "crash_count": 675,
+          "total_severity": 2413,
+          "avg_severity": 3.5748148148148147,
+          "pedestrian_involved": 79,
+          "cyclist_involved": 32,
+          "risk_multiplier": 1.398
+        },
+        {
+          "time_period": "evening",
+          "day_type": "weekend",
+          "crash_count": 255,
+          "total_severity": 877,
+          "avg_severity": 3.43921568627451,
+          "pedestrian_involved": 47,
+          "cyclist_involved": 7,
+          "risk_multiplier": 0.528
+        },
+        {
+          "time_period": "evening_rush",
+          "day_type": "weekday",
+          "crash_count": 665,
+          "total_severity": 2071,
+          "avg_severity": 3.1142857142857143,
+          "pedestrian_involved": 101,
+          "cyclist_involved": 35,
+          "risk_multiplier": 1.377
+        },
+        {
+          "time_period": "evening_rush",
+          "day_type": "weekend",
+          "crash_count": 171,
+          "total_severity": 543,
+          "avg_severity": 3.175438596491228,
+          "pedestrian_involved": 34,
+          "cyclist_involved": 8,
+          "risk_multiplier": 0.354
+        },
+        {
+          "time_period": "midday",
+          "day_type": "weekday",
+          "crash_count": 1423,
+          "total_severity": 4381,
+          "avg_severity": 3.078706957132818,
+          "pedestrian_involved": 166,
+          "cyclist_involved": 47,
+          "risk_multiplier": 2.947
+        },
+        {
+          "time_period": "midday",
+          "day_type": "weekend",
+          "crash_count": 365,
+          "total_severity": 1119,
+          "avg_severity": 3.0657534246575344,
+          "pedestrian_involved": 32,
+          "cyclist_involved": 9,
+          "risk_multiplier": 0.756
+        },
+        {
+          "time_period": "morning_rush",
+          "day_type": "weekday",
+          "crash_count": 581,
+          "total_severity": 1795,
+          "avg_severity": 3.089500860585198,
+          "pedestrian_involved": 72,
+          "cyclist_involved": 14,
+          "risk_multiplier": 1.203
+        },
+        {
+          "time_period": "morning_rush",
+          "day_type": "weekend",
+          "crash_count": 102,
+          "total_severity": 258,
+          "avg_severity": 2.5294117647058822,
+          "pedestrian_involved": 5,
+          "cyclist_involved": 1,
+          "risk_multiplier": 0.211
+        },
+        {
+          "time_period": "night",
+          "day_type": "weekday",
+          "crash_count": 352,
+          "total_severity": 1000,
+          "avg_severity": 2.840909090909091,
+          "pedestrian_involved": 19,
+          "cyclist_involved": 5,
+          "risk_multiplier": 0.729
+        },
+        {
+          "time_period": "night",
+          "day_type": "weekend",
+          "crash_count": 239,
+          "total_severity": 757,
+          "avg_severity": 3.1673640167364017,
+          "pedestrian_involved": 9,
+          "cyclist_involved": 0,
+          "risk_multiplier": 0.495
+        }
+      ],
+      "sanity_checks": {
+        "rush_hours_higher": false,
+        "night_lowest": true
+      }
+    },
+    "hotspots": {
+      "top_cells": [
+        {
+          "h3_cell": "892a100a987ffff",
+          "risk_score": 100.0,
+          "crash_count": 11,
+          "center_lat": 40.82123892796684,
+          "center_lng": -73.88993093456452
+        },
+        {
+          "h3_cell": "892a100ad17ffff",
+          "risk_score": 96.36,
+          "crash_count": 5,
+          "center_lat": 40.837324539014936,
+          "center_lng": -73.88195312430094
+        },
+        {
+          "h3_cell": "892a100dd37ffff",
+          "risk_score": 89.09,
+          "crash_count": 5,
+          "center_lat": 40.680757473535,
+          "center_lng": -73.90395169772044
+        },
+        {
+          "h3_cell": "892a100ee47ffff",
+          "risk_score": 89.09,
+          "crash_count": 5,
+          "center_lat": 40.72757553495881,
+          "center_lng": -73.83084265804
+        },
+        {
+          "h3_cell": "892a100cac3ffff",
+          "risk_score": 76.36,
+          "crash_count": 10,
+          "center_lat": 40.678287481186985,
+          "center_lng": -73.89744897038248
+        },
+        {
+          "h3_cell": "892a100ac07ffff",
+          "risk_score": 74.55,
+          "crash_count": 5,
+          "center_lat": 40.85274132272211,
+          "center_lng": -73.89968130493507
+        },
+        {
+          "h3_cell": "892a10771b7ffff",
+          "risk_score": 72.73,
+          "crash_count": 4,
+          "center_lat": 40.62887424068145,
+          "center_lng": -73.96818413078616
+        },
+        {
+          "h3_cell": "892a100da4bffff",
+          "risk_score": 70.91,
+          "crash_count": 3,
+          "center_lat": 40.68914531563664,
+          "center_lng": -73.98548544998519
+        },
+        {
+          "h3_cell": "892a100f6cfffff",
+          "risk_score": 67.27,
+          "crash_count": 5,
+          "center_lat": 40.80459228473499,
+          "center_lng": -73.9193076189361
+        },
+        {
+          "h3_cell": "892a100ac27ffff",
+          "risk_score": 65.45,
+          "crash_count": 8,
+          "center_lat": 40.84486461929684,
+          "center_lng": -73.89724247757255
+        }
+      ],
+      "top_streets": [
+        {
+          "street_name": "100 ST",
+          "risk_score": 100.0,
+          "crash_count": 2,
+          "crashes_per_km": 18.18
+        },
+        {
+          "street_name": "31 STREET",
+          "risk_score": 100.0,
+          "crash_count": 2,
+          "crashes_per_km": 18.99
+        },
+        {
+          "street_name": "CRESTON AVE",
+          "risk_score": 100.0,
+          "crash_count": 2,
+          "crashes_per_km": 16.76
+        },
+        {
+          "street_name": "E 86 ST",
+          "risk_score": 100.0,
+          "crash_count": 3,
+          "crashes_per_km": 19.51
+        },
+        {
+          "street_name": "EDGECOMBE AVE",
+          "risk_score": 100.0,
+          "crash_count": 4,
+          "crashes_per_km": 20.91
+        },
+        {
+          "street_name": "ERSKINE ST",
+          "risk_score": 100.0,
+          "crash_count": 3,
+          "crashes_per_km": 15.29
+        },
+        {
+          "street_name": "MCGUINNESS BLVD",
+          "risk_score": 100.0,
+          "crash_count": 3,
+          "crashes_per_km": 16.9
+        },
+        {
+          "street_name": "NOME AVE",
+          "risk_score": 100.0,
+          "crash_count": 2,
+          "crashes_per_km": 19.34
+        },
+        {
+          "street_name": "SNEDIKER AVE",
+          "risk_score": 100.0,
+          "crash_count": 3,
+          "crashes_per_km": 20.89
+        },
+        {
+          "street_name": "VARICK ST",
+          "risk_score": 100.0,
+          "crash_count": 6,
+          "crashes_per_km": 27.75
+        }
+      ]
+    },
+    "cross_validation": {
+      "train_size": 3862,
+      "test_size": 966,
+      "train_date_range": {
+        "start": "2026-01-07 00:00:00",
+        "end": "2026-01-26 14:45:00"
+      },
+      "test_date_range": {
+        "start": "2026-01-26 14:50:00",
+        "end": "2026-01-30 23:56:00"
+      },
+      "prediction_accuracy": {
+        "top_100_cells_capture_rate": 5.69,
+        "interpretation": "Percentage of test crashes in training hotspots"
+      }
+    }
+  }
+}

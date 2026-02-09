@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: safepath
+    runtime: python
+    plan: free
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: cd risk_aware_routing && gunicorn app:app --bind 0.0.0.0:$PORT --timeout 300 --workers 1 --preload
+    healthCheckPath: /api/weather
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: MAPBOX_TOKEN
+        sync: false
+      - key: VITE_MAPBOX_TOKEN
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: NODE_VERSION
+        value: "20.11.0"

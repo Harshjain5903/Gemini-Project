@@ -1,0 +1,66 @@
+/* ===== Mobile Bottom Sheet ===== */
+.sheet-surface {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #111827;
+  border-radius: 16px 16px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: auto;
+  overflow: hidden;
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.sheet-handle {
+  height: 28px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sheet-handle:active {
+  cursor: grabbing;
+}
+
+.sheet-handle-bar {
+  width: 36px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+}
+
+.sheet-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Sidebar content when inside bottom sheet */
+.mobile-sheet-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px;
+  gap: 12px;
+  background: transparent !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  height: auto !important;
+  min-height: auto !important;
+  overflow-y: visible !important;
+  border-right: none !important;
+}
+
+.mobile-sheet-sidebar .chat-messages {
+  max-height: 45vh;
+  overflow-y: auto;
+}
+
+.mobile-sheet-sidebar .footer {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

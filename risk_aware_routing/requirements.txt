@@ -1,0 +1,11 @@
+flask
+flask-cors
+gunicorn
+osmnx
+networkx
+scikit-learn
+pandas
+geopandas
+h3
+google-genai
+python-dotenv

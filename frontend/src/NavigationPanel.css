@@ -1,0 +1,371 @@
+/* Navigation Panel */
+.nav-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  gap: 0;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 12px;
+}
+
+.nav-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #10b981;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-close {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.nav-close:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+/* Route summary */
+.nav-route-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.nav-summary-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-summary-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-summary-label {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Start buttons */
+.nav-start-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-start-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.nav-start-btn.gps {
+  background: #10b981;
+  color: white;
+}
+
+.nav-start-btn.gps:hover {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.nav-demo-link {
+  background: none;
+  border: none;
+  color: #475569;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  font-family: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nav-demo-link:hover {
+  color: #64748b;
+}
+
+/* Active navigation */
+.nav-active {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Mode badge */
+.nav-mode-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+/* Progress bar */
+.nav-progress-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.nav-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #3b82f6);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+
+/* Current instruction */
+.nav-current {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.nav-current-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.nav-current-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-current-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-current-next {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Stats row */
+.nav-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+.nav-stat {
+  text-align: center;
+  padding: 8px 4px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+}
+
+.nav-stat-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.nav-stat-label {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+/* Step list */
+.nav-steps {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 200px;
+  min-height: 80px;
+}
+
+.nav-steps::-webkit-scrollbar {
+  width: 4px;
+}
+
+.nav-steps::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
+
+.nav-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.nav-step.active {
+  background: rgba(59, 130, 246, 0.15);
+  color: white;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.nav-step.done {
+  color: #34d399;
+}
+
+.nav-step.done .nav-step-icon {
+  color: #10b981;
+}
+
+.nav-step-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.nav-step-label {
+  flex: 1;
+}
+
+.nav-step-dist {
+  font-size: 11px;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+/* Stop button */
+.nav-stop-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.nav-stop-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+}
+
+/* GPS error banner */
+.nav-gps-error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-gps-error span {
+  font-size: 12px;
+  color: #f87171;
+  line-height: 1.4;
+}
+
+.nav-gps-error button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.nav-gps-error button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* Navigation position marker (fallback dot, arrow is in App.css) */
+.nav-marker {
+  width: 18px;
+  height: 18px;
+  background: #3b82f6;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25), 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .nav-start-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .nav-stop-btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .nav-current-label {
+    font-size: 16px;
+  }
+
+  .nav-step {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .nav-steps {
+    max-height: 250px;
+  }
+}
