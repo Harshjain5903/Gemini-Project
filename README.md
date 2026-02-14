@@ -1,26 +1,26 @@
-# StreetWise
+# SafePath
 
 **Find safer routes through Chicago — because Google Maps won't tell you which streets to avoid at 2 AM.**
 
-[Live Demo](https://safepath-calh.onrender.com/) | [Demo Video](#)
+[Live Website](https://safepath-calh.onrender.com/) | [Demo Video](https://youtu.be/_ntRJDM5w1A)
 
 ---
 
 ## The story behind this
 
-One of us had just moved to Chicago. First month in the city, walking back from a friend's place around 11 PM. Didn't know the neighborhoods. Google Maps gave the "fastest route" — straight through a stretch that, as we later found out, had multiple assault incidents that same week. Nothing happened that night, but it easily could have.
+All of us had just moved to Chicago. First month in the city, walking back from a friend's place around 11 PM. Didn't know the neighborhoods. Google Maps gave the "fastest route" — straight through a stretch that, as we later found out, had multiple assault incidents that same week. Nothing happened that night, but it easily could have.
 
 And it's not just pedestrians. Chicago sees over **49,000 traffic crashes every six months**. Certain intersections — Wacker Dr, Ida B Wells Dr, O'Hare St — are crash magnets. Drivers blow through them every day because their GPS just says "turn left in 200 feet" without mentioning the intersection has a 95-crash-per-km density. Cyclists get it even worse — vulnerable to both traffic and crime, with no tool that accounts for either.
 
 That stuck with us. Why doesn't navigation software care about *safety*? It optimizes for time, distance, tolls — but never once asks "hey, maybe don't take this route alone at midnight?" or "heads up, this intersection has a bad crash history."
 
-So we built StreetWise.
+So we built SafePath.
 
 ---
 
 ## What it actually does
 
-StreetWise is a navigation app for Chicago that routes you around danger — not just traffic. It pulls **49,505 real crash records** and **thousands of crime reports** from Chicago's open data portal, maps them onto a street-level hex grid, and finds you a path that's actually safer.
+ SafePath is a navigation app for Chicago that routes you around danger — not just traffic. It pulls **49,505 real crash records** and **thousands of crime reports** from Chicago's open data portal, maps them onto a street-level hex grid, and finds you a path that's actually safer.
 
 The kicker? You lose maybe 2-3 extra minutes. That's it. For **40% less risk** on average.
 
@@ -46,10 +46,10 @@ You can also just **call it**. Hit the phone icon and have a voice conversation.
 
 ### The risk isn't static
 
-This is the part we're most proud of. Risk in StreetWise isn't a fixed heatmap — it shifts constantly:
+This is the part we're most proud of. Risk in SafePath isn't a fixed heatmap — it shifts constantly:
 
 - **3 PM on a weekday** has **7x more crash risk** than 4 AM. The time slider lets you see this in real-time on the map.
-- **Thunderstorm with hail?** That's a 1.7x risk multiplier on top of everything else. StreetWise checks live weather from Open-Meteo and adjusts.
+- **Thunderstorm with hail?** That's a 1.7x risk multiplier on top of everything else. SafePath checks live weather from Open-Meteo and adjusts.
 - **Walking vs driving vs cycling** — completely different risk profiles. The AI picks the right mode from your words, or you can say it explicitly.
 
 ---
