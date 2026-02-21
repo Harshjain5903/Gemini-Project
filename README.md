@@ -1,5 +1,8 @@
 # SafePath
-TEAM MEMBERS - HARSH JAIN -https://github.com/Harshjain5903 | DHRUV MEHTA -https://github.com/DhruvMehta323| AAGAM BOHTRA -https://github.com/Aagam-Bothara?tab=overview&from=2026-02-01&to=2026-02-21
+#TEAM MEMBERS - 
+HARSH JAIN -https://github.com/Harshjain5903
+DHRUV MEHTA -https://github.com/DhruvMehta323
+AAGAM BOHTRA -https://github.com/Aagam-Bothara?tab=overview&from=2026-02-01&to=2026-02-21
 
 **Find safer routes through Chicago — because Google Maps won't tell you which streets to avoid at 2 AM.**
 
