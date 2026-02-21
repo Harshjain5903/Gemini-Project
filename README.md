@@ -4,6 +4,19 @@ TEAM MEMBERS - HARSH JAIN -https://github.com/Harshjain5903 | DHRUV MEHTA -https
 **Find safer routes through Chicago — because Google Maps won't tell you which streets to avoid at 2 AM.**
 
 [Live Website](https://safepath-calh.onrender.com/) | [Demo Video](https://youtu.be/_ntRJDM5w1A)
+---
+
+## Product Preview
+
+### Risk Heatmap + AI-Driven Safety Routing
+<p align="center">
+  <img src="original2.png" width="90%" alt="SafePath risk heatmap with crash and crime zones">
+</p>
+
+### Fastest vs Safest Route Comparison (Live Navigation)
+<p align="center">
+  <img src="original1.png" width="90%" alt="SafePath fastest vs safest route comparison">
+</p>
 
 ---
 
